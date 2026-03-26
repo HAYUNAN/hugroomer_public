@@ -9,29 +9,6 @@
 
 ---
 
-## 📸 UI Showcase (시각적 프리뷰)
-
-*아래 이미지들은 서비스의 핵심 UI 구조를 나타내며, 실제 상용화 버전의 스크린샷으로 대체될 예정입니다.*
-
-### 1. 엔터프라이즈 운영 대시보드 & 스마트 타임라인
-![Dashboard & Timeline Preview](https://placehold.co/1200x600/6366f1/white?text=Enterprise+Dashboard+%26+Smart+Gantt+Timeline+UI)
-* **운영 대시보드**: 매출 통계, 오늘 예약, 실시간 알림을 한눈에 파악할 수 있는 위젯 중심의 설계
-* **Gantt 타임라인**: 80px 그리드 단위의 정밀한 시간축과 직원별 예약 겹침 방지 알고리즘이 적용된 스케줄러
-
-### 2. AI 재방문 리텐션 엔진 (Claude 3.5 연동)
-![AI Revisit Message UI](https://placehold.co/800x450/4f46e5/white?text=AI+Retention+Engine+-+Claude+3.5+Sonnet)
-* **지능형 분석**: 반려동물의 마지막 방문일과 미용 스타일을 분석하여 3가지 톤(친근한, 정중한, 간단한)의 메시지 자동 생성
-
-### 3. 올인원 케어 모듈 (호텔 & 유치원)
-![Care Module UI](https://placehold.co/800x450/4338ca/white?text=Care+Module+-+Hotel+%26+Kindergarten+Management)
-* **통합 관리**: 객실 가동률 시각화, AI 기반 돌봄 리포트 요약 및 전자 동의서 연동 화면
-
-### 4. 보호자용 크로스 플랫폼 (Mobile App & PWA)
-![Mobile App UI](https://placehold.co/600x400/3730a3/white?text=Guardian+Mobile+App+%26+PWA+UI)
-* **심리스한 경험**: React Native 기반의 부드러운 인터랙션과 PWA를 통한 설치 없는 즉각적인 예약 환경 제공
-
----
-
 ## ✨ 주요 기능 및 비즈니스 가치
 
 | 기능 | 설명 |
