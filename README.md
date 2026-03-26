@@ -9,6 +9,29 @@
 
 ---
 
+## 📸 UI Showcase (시각적 프리뷰)
+
+*아래 이미지들은 서비스의 핵심 UI 구조를 나타내며, 실제 상용화 버전의 스크린샷으로 대체될 예정입니다.*
+
+### 1. 엔터프라이즈 운영 대시보드 & 스마트 타임라인
+![Dashboard & Timeline Preview](https://placehold.co/1200x600/6366f1/white?text=Enterprise+Dashboard+%26+Smart+Gantt+Timeline+UI)
+* **운영 대시보드**: 매출 통계, 오늘 예약, 실시간 알림을 한눈에 파악할 수 있는 위젯 중심의 설계
+* **Gantt 타임라인**: 80px 그리드 단위의 정밀한 시간축과 직원별 예약 겹침 방지 알고리즘이 적용된 스케줄러
+
+### 2. AI 재방문 리텐션 엔진 (Claude 3.5 연동)
+![AI Revisit Message UI](https://placehold.co/800x450/4f46e5/white?text=AI+Retention+Engine+-+Claude+3.5+Sonnet)
+* **지능형 분석**: 반려동물의 마지막 방문일과 미용 스타일을 분석하여 3가지 톤(친근한, 정중한, 간단한)의 메시지 자동 생성
+
+### 3. 올인원 케어 모듈 (호텔 & 유치원)
+![Care Module UI](https://placehold.co/800x450/4338ca/white?text=Care+Module+-+Hotel+%26+Kindergarten+Management)
+* **통합 관리**: 객실 가동률 시각화, AI 기반 돌봄 리포트 요약 및 전자 동의서 연동 화면
+
+### 4. 보호자용 크로스 플랫폼 (Mobile App & PWA)
+![Mobile App UI](https://placehold.co/600x400/3730a3/white?text=Guardian+Mobile+App+%26+PWA+UI)
+* **심리스한 경험**: React Native 기반의 부드러운 인터랙션과 PWA를 통한 설치 없는 즉각적인 예약 환경 제공
+
+---
+
 ## ✨ 주요 기능 및 비즈니스 가치
 
 | 기능 | 설명 |
@@ -63,6 +86,51 @@ hugroomer/
 
 ---
 
+## ✅ Implementation Status (구현 현황)
+
+현재 전체 공정률은 약 **87%**이며, 핵심 비즈니스 로직은 상용화 가능한 수준으로 구현되었습니다.
+
+### 🏢 B2B 운영 대시보드 (Web)
+- [x] **운영 허브**: 오늘 예약, 이번 달 매출 통계, 대기 예약 관리 및 실시간 알림 시스템
+- [x] **스케줄 엔진**: 직원별 Gantt 차트 타임라인 및 실시간 예약 겹침 감지/경고 로직
+- [x] **고객 관리**: 반려동물별 미용 이력 스냅샷, 블랙리스트(3단계) 및 노쇼 관리
+- [x] **AI 비즈니스**: Claude 3.5 기반 재방문 문자 초안 생성 및 케어 리포트 자동 요약
+- [x] **케어 모듈**: 펫호텔/유치원 전용 공간 관리, 체크인/아웃 프로세스 및 돌봄 일지
+- [x] **HR 시스템**: 직원별 권한(RBAC), 근무 스케줄 설정 및 연차/휴가 결재 시스템
+- [x] **정기 결제**: 토스페이먼츠 빌링키 기반 요금제 자동 결제 인프라
+
+### 📱 B2C 보호자 플랫폼 (Mobile App & PWA)
+- [x] **실시간 예약**: 샵 스케줄과 연동된 실시간 예약 신청, 수정 및 취소
+- [x] **추억 앨범**: Supabase Storage 연동 미용 전/후 사진 갤러리 제공
+- [x] **전자 동의서**: 법적 유효성을 갖춘 타이핑 서명 방식의 미용/케어 동의서 작성
+- [x] **실시간 소통**: 샵 직원과의 1:1 채팅 및 예약 상태 변경 푸시 알림
+- [x] **PWA 지원**: 앱 설치 없이 웹 링크만으로 즉시 이용 가능한 환경 구축
+
+### ⚙️ Backend & Infrastructure
+- [x] **Multi-tenancy**: RLS 기반의 완벽한 샵별 데이터 격리 및 보안
+- [x] **Real-time Engine**: Supabase Realtime을 활용한 메시징 및 알림 브로드캐스팅
+- [x] **Automation**: Cron Jobs를 활용한 정기 결제 처리 및 재방문 리마인더 발송
+
+---
+
+## 🗺️ Visionary Roadmap (로드맵)
+
+Hugroomer는 '관리 도구'를 넘어 펫케어 생태계를 연결하는 '플랫폼'을 지향합니다.
+
+### Phase 1: 진입장벽 제거 및 PWA 고도화
+- 보호자 전용 웹(PWA) 전환 완료를 통해 앱 설치 허들 제거 및 유입률 극대화
+- 미용 완료 후 "사진 확인 링크" SMS 발송 자동화를 통한 자연스러운 보호자 가입 유도
+
+### Phase 2: 결제 인프라 기반의 단골 Lock-in
+- **예약금 시스템**: 노쇼 방지를 위한 선결제 및 취소 정책 자동화 로직 도입
+- **구독권/횟수권**: 정기 방문을 유도하는 월정액 구독 모델 및 횟수 기반 차감 시스템 구현
+
+### Phase 3: 데이터 기반 플랫폼 확장
+- **지도 기반 샵 검색**: 공공데이터 연동 및 미등록 샵 대상의 유저 주도 초대 시스템
+- **신뢰 리뷰**: 예약 완료 건에 한정된 사진 리뷰 및 평점 시스템을 통한 샵 신뢰도 구축
+
+---
+
 ## 🔍 Core Engineering Highlights
 
 ### 1. 고밀도 예약 시각화 알고리즘 (Greedy Column Assignment)
@@ -87,13 +155,50 @@ hugroomer/
 
 ---
 
-## 📈 Development History & Evolution
+## 🎨 UI/UX Design System & Product Thinking
+
+1인 개발자로서 디자인과 개발의 간극을 줄이고, 일관된 브랜드 경험을 제공하기 위해 시스템 중심의 디자인 접근 방식을 채택했습니다.
+
+### 1. Atomic Design 기반의 공통 UI 패키지
+- **Shared Design System**: `packages/ui`를 통해 Web, Mobile, Landing 페이지에서 동일한 디자인 언어(색상, 타이포그래피, 컴포넌트)를 공유하도록 설계했습니다.
+- **Customizing shadcn/ui**: 표준화된 라이브러리를 기반으로 Hugroomer만의 따뜻하고 신뢰감 있는 톤앤매너(Primary: Purple/Indigo)를 투영한 커스텀 테마를 구축했습니다.
+
+### 2. 사용자 중심의 이원화된 UX 설계
+- **B2B (미용샵 원장님)**: 고밀도 정보 처리가 필요한 대시보드 특성에 맞춰 **시각적 위계(Visual Hierarchy)**를 최적화했습니다. 예약 현황을 한눈에 파악할 수 있는 Gantt 차트와 빠른 액션 패널을 배치하여 운영 효율을 극대화했습니다.
+- **B2C (보호자)**: 복잡한 과정을 생략한 **모바일 퍼스트 UX**를 지향합니다. 예약부터 전자 동의서 작성까지의 흐름을 선형화하여, IT 기기에 익숙하지 않은 연령층도 이탈 없이 과업을 완수할 수 있도록 설계했습니다.
+
+### 3. 디테일한 인터랙션 고찰
+- **Empty States & Loading**: 데이터가 없는 화면에서도 사용자에게 다음 행동을 가이드하는 일러스트와 문구를 배치했습니다.
+- **Micro-interactions**: 예약 상태 변경 시의 즉각적인 피드백, 겹침 예약 발생 시의 시각적 경고 등 사용자 실수를 방지하는 세밀한 인터랙션을 구현했습니다.
+- **Accessibility**: 다양한 환경의 원장님들을 고려하여 폰트 가독성과 대비비를 조정하고, 한글 입력 시의 포커스 이슈 등 한국적 사용 환경을 세밀하게 반영했습니다.
+
+---
+
+## 🚀 Project Management & Productivity (1인 개발 전략)
+
+혼자서 기획부터 배포까지 관리하기 위해 체계적인 **Agile Work-flow**와 **Self-Documentation** 전략을 수립했습니다.
+
+### 1. Semantic Commit & CI/CD Control
+- **Conventional Commits**: `feat:`, `fix:`, `refactor:`, `chore:` 등 표준화된 커밋 메시지를 사용하여 변경 이력을 추적 가능하게 관리했습니다.
+- **CI/CD Optimization**: 불필요한 빌드 리소스를 낭비하지 않기 위해 커밋 메시지에 `[skip ci]` 태그를 활용, 배포 준비가 완료된 시점에만 수동으로 배포를 트리거하는 비용 효율적인 전략을 사용했습니다.
+
+### 2. Living Documentation
+- **CLAUDE.md**: 프로젝트의 핵심 비즈니스 로직, 기술적 결정 사항, 트러블슈팅 가이드를 '단일 진실 공급원(Single Source of Truth)'으로 관리하여 개발 생산성을 높였습니다.
+- **PROGRESS.md**: Phase 기반의 로드맵과 현재 진행률을 실시간으로 업데이트하여, 전체 흐름을 놓치지 않고 점진적인 기능 확장을 달성했습니다.
+
+### 3. Issue & Risk Management
+- **Phase-based Roadmap**: 전체 프로젝트를 5단계(Phase 0~5)로 세분화하여 우선순위에 따른 기능을 구현했습니다.
+- **Defense Design**: 1인 운영 시 발생할 수 있는 데이터 결함을 방지하기 위해 DB 제약 조건(Constraints)과 RLS를 최우선으로 설계한 후 프론트엔드 개발에 착수했습니다.
+
+---
+
+## � Development History & Evolution
 
 Hugroomer는 단순한 기능 구현을 넘어, 실제 운영 환경에서의 확장성과 유지보수성을 확보하기 위해 점진적인 아키텍처 개선을 거쳤습니다.
 
 | 버전 | 주요 마일스톤 | 기술적 고찰 및 해결 방안 |
 | :--- | :--- | :--- |
-| **v0.1.0** | **Monorepo Foundation** | Web(Next.js)과 Mobile(Expo) 간의 **코드 중복을 최소화**하기 위해 Turborepo 기반 모노레포를 구축하고, 공통 타입 패키지를 통해 데이터 정합성을 확보함. |
+| **v0.1.0** | **Monorepo Foundation** | Web(Next.js)과 Mobile(Expo) 간의 코드 중복을 최소화하기 위해 Turborepo 기반 모노레포를 구축함. |
 | **v0.5.0** | **Scheduling Engine** | 1인샵 원장의 편의성을 위해 Gantt 차트 기반 타임라인을 구현함. SSR 환경에서의 **KST/UTC 시간대 일관성** 문제를 `mounted` 훅과 전용 시간 유틸리티로 해결함. |
 | **v0.8.0** | **AI & Multi-care Logic** | 기존 개별 테이블(hotel_*)의 데이터 산재 문제를 해결하기 위해 **통합 케어 테이블(`care_*`)**로 마이그레이션함. Claude API를 연동하여 반복적인 문서 작성 업무를 자동화함. |
 | **v0.9.5** | **Real-time & Security** | Supabase Realtime을 도입하여 별도의 소켓 서버 없이 실시간 채팅을 구현함. 비즈니스 로직 전반에 **RLS(Row Level Security)**를 적용하여 테넌트 간 보안을 강화함. |
